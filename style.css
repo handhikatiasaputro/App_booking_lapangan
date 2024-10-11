@@ -1,0 +1,129 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(bg3.jpg);
+    background-repeat: none;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 60%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* Warna putih dengan 50% transparansi */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #f0f0f5;
+    color: #333;
+}
+
+td {
+    background-color: #fff;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #22aeea;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #005275;
+}
+
+.button.edit{
+    background-color: green;
+}
+
+.button.delete {
+    background-color: #dc3545;
+}
+
+.button.delete:hover {
+    background-color: #c82333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+form label {
+    font-weight: bold;
+    color: #333;
+}
+
+form input[type="text"], form input[type="date"], form input[type="time"]{
+    width: 98%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+form select {
+    appearance: none;
+    background-color: #fff;
+    cursor: pointer;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #22aeea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #005275;
+}
+
+a.button {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+}
+
+.back{
+    text-decoration: none;
+}
