@@ -9,7 +9,7 @@ if (isset($_GET['delete'])) {
 }
 
 // Mengambil semua bookings
-$result = $db->query("SELECT * FROM bookings");
+$result = $db->query("SELECT * FROM bookings ORDER BY tanggal,waktu ASC");
 ?>
 <!DOCTYPE html>
 <html lang="en">

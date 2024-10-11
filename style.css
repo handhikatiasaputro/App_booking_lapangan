@@ -1,27 +1,33 @@
+/* Style untuk body dan latar belakang */
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url(bg3.jpg);
-    background-repeat: none;
+    background-image: url('bg3.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
 }
 
+/* Container utama */
 .container {
     width: 60%;
     margin: 30px auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.5); /* Warna putih dengan 50% transparansi */
+    background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
+/* Header */
 h1 {
     text-align: center;
     color: #333;
     margin-bottom: 20px;
 }
 
+/* Style untuk tabel */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -43,6 +49,7 @@ td {
     background-color: #fff;
 }
 
+/* Style untuk tombol */
 .button {
     display: inline-block;
     padding: 10px 15px;
@@ -58,7 +65,7 @@ td {
     background-color: #005275;
 }
 
-.button.edit{
+.button.edit {
     background-color: green;
 }
 
@@ -70,6 +77,7 @@ td {
     background-color: #c82333;
 }
 
+/* Form styling */
 form {
     display: flex;
     flex-direction: column;
@@ -82,29 +90,22 @@ form label {
     color: #333;
 }
 
-form input[type="text"], form input[type="date"], form input[type="time"]{
-    width: 98%;
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-
+/* Styling untuk semua input, select, dan textarea */
+form input[type="text"],
+form input[type="date"],
+form input[type="time"],
 form select {
-    appearance: none;
-    background-color: #fff;
-    cursor: pointer;
-    width: 100%;
+    width: 100%;  /* Lebar diatur agar seragam */
     padding: 12px;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 16px;
-    
+    box-sizing: border-box; /* Pastikan padding dan border dihitung dalam lebar */
+    margin-bottom: 15px; /* Jarak antar input */
 }
 
 form input[type="submit"] {
-    width: 100%;
+    width: 100%; /* Lebar tombol submit */
     padding: 12px;
     background-color: #22aeea;
     color: white;
@@ -112,6 +113,7 @@ form input[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    box-sizing: border-box;
 }
 
 form input[type="submit"]:hover {
@@ -124,6 +126,6 @@ a.button {
     margin-top: 20px;
 }
 
-.back{
+.back {
     text-decoration: none;
 }

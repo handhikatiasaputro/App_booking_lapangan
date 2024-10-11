@@ -50,6 +50,7 @@ if (isset($_POST['submit'])) {
             
             <label for="waktu">Waktu</label>
             <select name="waktu" required>
+                <option value="">Pilih Waktu</option>
                 <option value="09:00 - 10.00" <?php if($booking['waktu'] == '09:00') echo 'selected'; ?>>09:00 - 10.00</option>
                 <option value="10:00 - 11.00" <?php if($booking['waktu'] == '10:00') echo 'selected'; ?>>10:00 - 11.00</option>
                 <option value="11:00 - 12.00" <?php if($booking['waktu'] == '11:00') echo 'selected'; ?>>11:00 - 12.00</option>

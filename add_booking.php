@@ -41,6 +41,7 @@ if (isset($_POST['submit'])) {
             
             <label for="waktu">Waktu</label>
             <select name="waktu" required>
+                <option value="">Pilih Waktu</option>
                 <option value="09:00 - 10.00">09:00 - 10.00</option>
                 <option value="10:00 - 11.00">10:00 - 11.00</option>
                 <option value="11:00 - 12.00">11:00 - 12.00</option>
