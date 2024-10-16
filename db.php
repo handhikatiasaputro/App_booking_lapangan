@@ -1,5 +1,5 @@
 <?php
-    $db = new SQLite3('db_bookings.sqlite');
+    $db = new SQLite3('db_bookings.db');
     
     if(!$db) {
         echo $db->lastErrorMsg();
