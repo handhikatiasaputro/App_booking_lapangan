@@ -1,7 +1,7 @@
 /* Style untuk body dan latar belakang */
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url('bg3.jpg');
+    background-image: url('image/bg3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -65,12 +65,23 @@ td {
     background-color: #005275;
 }
 
-.button.edit {
+.button-edit {
     background-color: green;
+    padding: 10px 15px;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
 }
 
-.button.delete {
+.button-delete {
     background-color: #dc3545;
+    padding: 10px 15px;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+  
 }
 
 .button.delete:hover {

@@ -6,6 +6,7 @@ require "db.php";
 if (isset($_GET['delete'])) {
     $id = $_GET['delete'];
     $db->query("DELETE FROM bookings WHERE id = $id");
+
 }
 
 // Mengambil semua bookings
@@ -38,8 +39,8 @@ $result = $db->query("SELECT * FROM bookings ORDER BY tanggal,waktu ASC");
                 <td><?php echo htmlspecialchars(date('d-m-Y', strtotime($row['tanggal']))); ?></td>
                 <td><?php echo htmlspecialchars($row['waktu']); ?></td>
                 <td>
-                    <a href="edit_booking.php?id=<?php echo $row['id']; ?>" class="button edit">Edit</a>
-                    <a href="index.php?delete=<?php echo $row['id']; ?>" class="button delete">Delete</a>
+                    <a href="edit_booking.php?id=<?php echo $row['id']; ?>" class="button-edit">Edit</a>
+                    <a href="index.php?delete=<?php echo $row['id'];?>" onclick="return confirm('Kamu Yakin Mau Hapus Ini?')" class="button-delete">Delete</a>
                 </td>
             </tr>
             <?php endwhile; ?>

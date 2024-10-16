@@ -1,5 +1,5 @@
 <?php
-    $db = new SQLite3('bookings.db');
+    $db = new SQLite3('db_bookings.sqlite');
     
     if(!$db) {
         echo $db->lastErrorMsg();
@@ -14,7 +14,6 @@
     nama TEXT, 
     lapangan TEXT, 
     tanggal TEXT, 
-    waktu_main TEXT,
-    waktu_selesai TEXT)");
+    waktu TEXT)");
     
 ?>
