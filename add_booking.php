@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
         <h1>Booking Disini</h1>
         <form action="" method="POST">
             <label for="nama">Nama</label>
-            <input type="text" name="nama" required>
+            <input type="text" name="nama" required autofocus>
             
             <label for="lapangan">Pilih Lapangan</label>
             <select name="lapangan" required>
