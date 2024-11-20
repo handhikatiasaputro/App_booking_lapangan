@@ -1,5 +1,6 @@
 <?php
 require "db.php";
+require "function.php";
 
 // Menambahkan booking
 if (isset($_POST['submit'])) {
@@ -8,9 +9,10 @@ if (isset($_POST['submit'])) {
     $tanggal = $_POST['tanggal'];
     $waktu = $_POST['waktu'];
 
-    $db->query("INSERT INTO bookings (nama, lapangan, tanggal, waktu) VALUES ('$nama', '$lapangan', '$tanggal', '$waktu')");
+    $tambah = tambah_data($nama, $lapangan, $tanggal, $waktu);
     header('Location: index.php');
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

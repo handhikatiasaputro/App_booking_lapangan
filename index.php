@@ -1,17 +1,18 @@
 <?php
 require "db.php";
-
+require "function.php";
 
 // Menghapus booking
 if (isset($_GET['delete'])) {
     $id = $_GET['delete'];
-    $db->query("DELETE FROM bookings WHERE id = $id");
 
+    $hapus = hapus($id);
 }
 
 // Mengambil semua bookings
-$result = $db->query("SELECT * FROM bookings ORDER BY tanggal,waktu ASC");
+$result = $db->query ("SELECT * FROM bookings ORDER BY tanggal,waktu ASC");
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +33,9 @@ $result = $db->query("SELECT * FROM bookings ORDER BY tanggal,waktu ASC");
                 <th>Waktu</th>
                 <th>Aksi</th>
             </tr>
-            <?php while ($row = $result->fetchArray()): ?>
+            <?php 
+
+            while ($row = $result->fetchArray()): ?>
             <tr>
                 <td><?php echo htmlspecialchars($row['nama']); ?></td>
                 <td><?php echo htmlspecialchars($row['lapangan']); ?></td>
